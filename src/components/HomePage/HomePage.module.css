@@ -1,0 +1,356 @@
+.homePage {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #e74c3c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.errorContainer h2 {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.errorContainer button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.productsSection {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* trendingSection removed */
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* sectionHeaderRow no longer used for Exclusive Products */
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* titleUnderline centered by default */
+
+/* See All button aligned to the right */
+.seeAllBtn {
+  display: inline-block;
+  background: #667eea;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.seeAllBtn:hover {
+  background: #5a6fd8;
+  transform: translateY(-1px);
+}
+
+/* arrows removed */
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* trendingGrid removed */
+
+.instagramSection {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.instagramContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  position: relative;
+}
+
+.instagramBox {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.instagramBox h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+.instagramBox p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footerSection h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.contactIcon {
+  font-size: 16px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  width: 35px;
+  height: 35px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #e74c3c;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 10px;
+}
+
+.footerLinks a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #e74c3c;
+}
+
+.newsletterForm {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+}
+
+.newsletterBtn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletterBtn:hover {
+  background-color: #c0392b;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright {
+  color: #999;
+  font-size: 14px;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.paymentIcon {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .productsSection {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .navigationArrows {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .productsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .instagramBox {
+    padding: 30px 40px;
+    margin: 0 20px;
+  }
+
+  .instagramBox h3 {
+    font-size: 24px;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .productsGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .instagramBox {
+    padding: 20px 30px;
+  }
+
+  .instagramBox h3 {
+    font-size: 20px;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+  }
+
+  .newsletterInput {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .newsletterBtn {
+    border-radius: 6px;
+  }
+}

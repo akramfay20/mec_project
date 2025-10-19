@@ -1,0 +1,110 @@
+.footerWrap {
+  background: #2c3e50;
+  color: #f5f5f5;
+  border-top: 1px solid #34495e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.brandCol {}
+
+.logoRow { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.logoBox { 
+  width: 28px; 
+  height: 28px; 
+  border-radius: 8px; 
+  background: #667eea; 
+  color: #fff; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  font-weight:700; 
+  font-size: 16px;
+}
+.brandName { 
+  font-weight: 700; 
+  font-size: 16px; 
+  color: #fff;
+}
+
+.brandDesc { color: #c9c9c9; line-height: 1.6; max-width: 420px; }
+
+.socials { display: flex; gap: 10px; margin-top: 14px; }
+.socialBtn { 
+  width: 36px; 
+  height: 36px; 
+  border-radius: 8px; 
+  background: #667eea; 
+  border: none; 
+  color: #fff; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  text-decoration:none; 
+  transition: all 0.3s ease;
+}
+.socialBtn:hover { 
+  background: #5a6fd8;
+  transform: translateY(-1px);
+}
+
+.linksCol { display: grid; grid-template-columns: repeat(3, minmax(140px,1fr)); gap: 20px; }
+.linkGroup {}
+.groupTitle { 
+  font-weight: 700; 
+  color: #fff;
+  margin-bottom: 12px; 
+  font-size: 16px;
+}
+.link { 
+  display:block; 
+  color: #c0c4cc; 
+  text-decoration: none; 
+  padding: 6px 0; 
+  transition: color 0.3s ease;
+}
+.link:hover { 
+  color: #667eea;
+}
+
+.bottomRow { 
+  display:flex; 
+  justify-content: space-between; 
+  align-items:center; 
+  padding-top: 20px; 
+  margin-top: 20px; 
+  border-top: 1px solid #34495e; 
+}
+.copy { color: #a9b0bb; font-size: 13px; }
+.copyMobile { display:none; color: #a9b0bb; font-size: 13px; margin-top: 10px; }
+.legalLinks { display:flex; gap: 16px; }
+.legalLink { 
+  color: #a9b0bb; 
+  text-decoration:none; 
+  font-size: 13px; 
+  transition: color 0.3s ease;
+}
+.legalLink:hover { 
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .topRow { grid-template-columns: 1fr; }
+  .linksCol { grid-template-columns: repeat(2, 1fr); }
+  .bottomRow { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .copy { display:none; }
+  .copyMobile { display:block; }
+}
+
+
