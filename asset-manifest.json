@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mec_project/static/css/main.af499ce8.css",
+    "main.js": "/mec_project/static/js/main.dbb32107.js",
+    "index.html": "/mec_project/index.html",
+    "main.af499ce8.css.map": "/mec_project/static/css/main.af499ce8.css.map",
+    "main.dbb32107.js.map": "/mec_project/static/js/main.dbb32107.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af499ce8.css",
+    "static/js/main.dbb32107.js"
+  ]
+}
